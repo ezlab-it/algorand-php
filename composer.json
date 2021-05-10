@@ -9,13 +9,11 @@
     ],
     "homepage": "https://github.com/rootsoft/algorand-php",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Tomas Verhelst",
-            "email": "tomasverhelst@gmail.com",
-            "role": "Developer"
-        }
-    ],
+    "authors": [{
+        "name": "Tomas Verhelst",
+        "email": "tomasverhelst@gmail.com",
+        "role": "Developer"
+    }],
     "require": {
         "php": "^7.4|^8.0",
         "ext-json": "*",
@@ -26,7 +24,7 @@
         "myclabs/php-enum": "^1.8",
         "paragonie/constant_time_encoding": "^2.4",
         "paragonie/halite": "^4",
-        "rybakit/msgpack": "^0.7.2"
+        "rybakit/msgpack": "^0.8.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.18",
