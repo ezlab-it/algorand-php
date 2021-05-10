@@ -24,7 +24,7 @@
         "myclabs/php-enum": "^1.8",
         "paragonie/constant_time_encoding": "^2.4",
         "paragonie/halite": "^4",
-        "rybakit/msgpack": "^0.8.0"
+        "rybakit/msgpack": "^0.7.2"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.18",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee18f38aeabdb681cf9ce93910a06a24",
+    "content-hash": "67be258e82e1f24d0a6e624ab3427a4f",
     "packages": [
         {
             "name": "brick/math",
@@ -2423,16 +2423,16 @@
         },
         {
             "name": "rybakit/msgpack",
-            "version": "v0.8.0",
+            "version": "v0.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rybakit/msgpack.php.git",
-                "reference": "d4776c10493df1dd76f9d4d4b79ec5edffebfae9"
+                "reference": "f3ad27e3e7eba2204e022ec175a981e6ccb97548"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rybakit/msgpack.php/zipball/d4776c10493df1dd76f9d4d4b79ec5edffebfae9",
-                "reference": "d4776c10493df1dd76f9d4d4b79ec5edffebfae9",
+                "url": "https://api.github.com/repos/rybakit/msgpack.php/zipball/f3ad27e3e7eba2204e022ec175a981e6ccb97548",
+                "reference": "f3ad27e3e7eba2204e022ec175a981e6ccb97548",
                 "shasum": ""
             },
             "require": {
@@ -2472,7 +2472,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rybakit/msgpack.php/issues",
-                "source": "https://github.com/rybakit/msgpack.php/tree/v0.8.0"
+                "source": "https://github.com/rybakit/msgpack.php/tree/v0.7.2"
             },
             "funding": [
                 {
@@ -2480,7 +2480,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-18T07:41:20+00:00"
+            "time": "2020-12-18T21:14:07+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
