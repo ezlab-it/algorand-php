@@ -129,7 +129,7 @@ class RawTransaction
      /**
      * Any data up to 1000 bytes.
      *
-     * @var Bin|null
+     * @var string|null
      */
     public ?string $notePack = null;
 

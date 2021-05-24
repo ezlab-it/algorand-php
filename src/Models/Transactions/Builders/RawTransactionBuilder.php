@@ -100,10 +100,10 @@ abstract class RawTransactionBuilder
      * Any data up to 1000 bytes.
      * The notePack is a MessagePack Bin encoded.
      *
-     * @param ?Bin $notePack
+     * @param ?string $notePack
      * @return $this
      */
-    public function notePack(?Bin $notePack)
+    public function notePack(?string $notePack)
     {
         $this->transaction->notePack = $notePack;
 
