@@ -263,14 +263,14 @@ class RawTransaction
 
         $this->fee = $fee;
     }
-
+ 
     public function toArray()
     {
         return AlgorandUtils::algorand_array_clean([
             'fee' => $this->fee->toInt(),
             'fv' => $this->firstValid->toInt(),
             'lv' => $this->lastValid->toInt(),
-            'note' =>  $this->notePack ? $this->notePack:( $this->note ? new Bin(utf8_encode($this->note)) : null),
+            'note' =>  $this->notePack  ? $this->notePack:( $this->note ? new Bin(utf8_encode($this->note)) : null),
             'snd' => $this->sender->address,
             'type' => $this->type,
             'gen' => $this->genesisId,

@@ -5,6 +5,7 @@ namespace Rootsoft\Algorand\Models\Transactions\Builders;
 
 use Brick\Math\BigInteger;
 use Illuminate\Support\Arr;
+use MessagePack\Type\Bin;
 use Rootsoft\Algorand\Algorand;
 use Rootsoft\Algorand\Exceptions\AlgorandException;
 use Rootsoft\Algorand\Models\Accounts\Address;
@@ -90,6 +91,21 @@ abstract class RawTransactionBuilder
     public function note(?string $note)
     {
         $this->transaction->note = $note;
+
+        return $this;
+    }
+
+
+    /**
+     * Any data up to 1000 bytes.
+     * The notePack is a MessagePack Bin encoded.
+     *
+     * @param ?Bin $notePack
+     * @return $this
+     */
+    public function notePack(?Bin $notePack)
+    {
+        $this->transaction->notePack = $notePack;
 
         return $this;
     }
