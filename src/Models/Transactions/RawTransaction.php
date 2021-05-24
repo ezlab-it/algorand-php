@@ -126,6 +126,13 @@ class RawTransaction
      */
     public ?string $note = null;
 
+     /**
+     * Any data up to 1000 bytes.
+     *
+     * @var Bin|null
+     */
+    public ?string $notePack = null;
+
     /**
      * Specifies the authorized address.
      * This address will be used to authorize all future transactions. Learn more about Rekeying accounts.
@@ -263,7 +270,7 @@ class RawTransaction
             'fee' => $this->fee->toInt(),
             'fv' => $this->firstValid->toInt(),
             'lv' => $this->lastValid->toInt(),
-            'note' => $this->note ? new Bin(utf8_encode($this->note)) : null,
+            'note' =>  $this->notePack ? $this->notePack:( $this->note ? new Bin(utf8_encode($this->note)) : null),
             'snd' => $this->sender->address,
             'type' => $this->type,
             'gen' => $this->genesisId,
